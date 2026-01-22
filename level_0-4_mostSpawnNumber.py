@@ -7,8 +7,10 @@ while addNumb != 'X':
     if addNumb == 'X' or addNumb == '':
         break
     
-    if addNumb == int(addNumb):
+    if addNumb:
         numb.append(addNumb)
     
 for i in range(0, len(numb)):
+    if numb[i] == str:
+        numb[i] = ''
     print(numb[i], end=" ")
