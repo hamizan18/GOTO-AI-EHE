@@ -2,10 +2,13 @@ numb = []
 
 addNumb = 'Y'
 
-while addNumb != 'X' and addNumb != 'x':
-    addNumb = input("Input your number (klik 'X' to close): ")
-
-    if addNumb == 'X' and addNumb == 'x':
+while addNumb != 'X':
+    addNumb = input("Input your number (klik 'X' or fill blank to print): ")
+    if addNumb == 'X' or addNumb == '':
         break
     
-    numb.append(int(addNumb))
+    if addNumb == int(addNumb):
+        numb.append(addNumb)
+    
+for i in range(0, len(numb)):
+    print(numb[i], end=" ")
