@@ -13,7 +13,7 @@ while addNumb != 'X':
     if addNumb == 'X' or addNumb == '' or addNumb == 'x':
         break
     
-print('Your input number is: ', end='')
+print('\nYour input number is: ', end='')
 for i in range(0, len(numb)):
     temp.clear()
     print(numb[i], end=" ")
@@ -24,6 +24,6 @@ for i in range(0, len(numb)):
     mostTemp = len(temp)
     if most < mostTemp:
         most = mostTemp
-    theNumber = temp
+        theNumber = temp[0]
 
 print(f'\nMost spawn number is {theNumber}, appears as {most} times')
