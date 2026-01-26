@@ -14,3 +14,4 @@ def Counter():
         print(namba[i], end=" ")
 
 Counter()
+# AA PLISSS LIAT NI PENGEN LANJUUTS
