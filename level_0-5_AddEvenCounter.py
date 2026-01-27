@@ -6,12 +6,11 @@ def Counter():
     while True:
         numbs = int(input('Input Your Number (fill blank to close): '))
         if numbs != '':
+            if numbs % 2 == 0:
+                odd += 1
+            else:
+                even += 1
             namba.append(numbs)
-            for i in range(0, len(namba)):
-                if namba[i] % 2 == 0:
-                    odd += 1
-                else:
-                    even += 1
         if numbs == '':
             break
         
