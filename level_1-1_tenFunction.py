@@ -26,3 +26,14 @@ def divine():
 
 
 def multiply():
+    
+summation()
+minMax()
+checkOdd()
+checkMax()
+averageNumber()
+primeCheck()
+factorial()
+subtraction()
+divine()
+multiply()
