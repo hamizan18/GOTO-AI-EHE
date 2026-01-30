@@ -7,7 +7,21 @@ def summation():
         res += sum
     
 def minMax():
+    allNumber = []
+    maxNum = 0
+    minNum = 0
     
+    n = int(input('Input Your number: '))
+    allNumber.append(n)
+    
+    if n > maxNum:
+        maxNum = n
+    if n < minNum:
+        minNum = n
+    
+    print('All Your inputted number is: ')
+    for i in range(0, len(allNumber)):
+        print(allNumber[i], end=" ")
     
 def checkOdd():
     
