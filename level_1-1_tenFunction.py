@@ -1,5 +1,10 @@
 def summation():
+    res = 0
+    max = int(input('Input max input number: '))
     
+    for i in range(0, len(max)):
+        sum = input(f'Number-{i}: ')
+        res += sum
     
 def minMax():
     
