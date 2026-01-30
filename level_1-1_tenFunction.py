@@ -13,15 +13,20 @@ def minMax():
     maxNum = 0
     minNum = 0
     
-    n = int(input('Input Your number: '))
-    allNumber.append(n)
+    while True:
+        n = input('Input Your number (fill blank to close): ')
+        if n != '':
+            n = int(n)
+            allNumber.append(n)
+        if n == '':
+            break
+        
+        if n > maxNum:
+            maxNum = n
+        if n < minNum:
+            minNum = n
     
-    if n > maxNum:
-        maxNum = n
-    if n < minNum:
-        minNum = n
-    
-    print('All Your inputted number is: ')
+    print('All Your inputted number is: ', end='')
     for i in range(0, len(allNumber)):
         print(allNumber[i], end=" ")
     
@@ -48,7 +53,7 @@ def minMax():
 
 # def multiply():
     
-summation()
+# summation()
 minMax()
 # checkOdd()
 # checkMax()
