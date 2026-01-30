@@ -2,9 +2,11 @@ def summation():
     res = 0
     max = int(input('Input max input number: '))
     
-    for i in range(0, len(max)):
-        sum = input(f'Number-{i}: ')
-        res += sum
+    for i in range(0, max):
+        sum = int(input(f'Number-{i+1}: '))
+        res = int(res + sum)
+    
+    print(f'The summation from your input is: {res}')
     
 def minMax():
     allNumber = []
@@ -23,36 +25,36 @@ def minMax():
     for i in range(0, len(allNumber)):
         print(allNumber[i], end=" ")
     
-def checkOdd():
+# def checkOdd():
     
     
-def checkMax():
+# def checkMax():
     
     
-def averageNumber():
+# def averageNumber():
     
     
-def primeCheck():
+# def primeCheck():
     
     
-def factorial():
+# def factorial():
 
 
-def subtraction():
+# def subtraction():
 
 
-def divine():
+# def divine():
 
 
-def multiply():
+# def multiply():
     
 summation()
 minMax()
-checkOdd()
-checkMax()
-averageNumber()
-primeCheck()
-factorial()
-subtraction()
-divine()
-multiply()
+# checkOdd()
+# checkMax()
+# averageNumber()
+# primeCheck()
+# factorial()
+# subtraction()
+# divine()
+# multiply()
