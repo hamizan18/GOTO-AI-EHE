@@ -1,3 +1,27 @@
+action = input('Choose your action:\n1. Summation\n2. Check Min n Max number\n3. Check the Odd number\n4. Check the Max number\n5. Check Average spawn number\n6. Check prime nunmber\n7. Factorial count\n8. Number Subtraction\n9. Divine Number\n10. Multiply Number')
+match action:
+    case 1:
+        summation()
+    case 2:
+        minMax()
+    case 3:
+        checkOdd()
+    case 4:
+        checkMax()
+    case 5:
+        averageNumber()
+    case 6:
+        primeCheck()
+    case 7:
+        factorial()
+    case 8:
+        subtraction()
+    case 9:
+        divine()
+    case 10:
+        multiply()
+        
+# FUNCTION
 def summation():
     res = 0
     max = int(input('Input max input number: '))
@@ -48,7 +72,7 @@ def checkOdd():
     for i in range(0, len(allNumber)):
         print(allNumber[i], end=" ")
     
-        print('All your inputted number is: ', end="")
+    print('\nAll your Odd number is: ', end="")
     for i in range(0, len(oddNumber)):
         print(oddNumber[i], end=" ")
 
@@ -72,13 +96,3 @@ def checkOdd():
 
 # def multiply():
     
-# summation()
-# minMax()
-checkOdd()
-# checkMax()
-# averageNumber()
-# primeCheck()
-# factorial()
-# subtraction()
-# divine()
-# multiply()
