@@ -30,9 +30,28 @@ def minMax():
     for i in range(0, len(allNumber)):
         print(allNumber[i], end=" ")
     
-# def checkOdd():
+def checkOdd():
+    allNumber = []
+    oddNumber = []
     
+    while True:
+        theNumber = print('Input your number (fill blank to close): ')
+        if theNumber != '':
+            theNumber = int(theNumber)
+            if theNumber % 2 == 0:
+                oddNumber.append(theNumber)
+            allNumber.append(theNumber)
+        if theNumber == '':
+            break
+        
+    print('All your inputted number is: ', end="")
+    for i in range(0, len(allNumber)):
+        print(allNumber[i], end=" ")
     
+        print('All your inputted number is: ', end="")
+    for i in range(0, len(oddNumber)):
+        print(oddNumber[i], end=" ")
+
 # def checkMax():
     
     
@@ -54,8 +73,8 @@ def minMax():
 # def multiply():
     
 # summation()
-minMax()
-# checkOdd()
+# minMax()
+checkOdd()
 # checkMax()
 # averageNumber()
 # primeCheck()
