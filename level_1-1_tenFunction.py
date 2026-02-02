@@ -35,7 +35,7 @@ def checkOdd():
     oddNumber = []
     
     while True:
-        theNumber = print('Input your number (fill blank to close): ')
+        theNumber = input('Input your number (fill blank to close): ')
         if theNumber != '':
             theNumber = int(theNumber)
             if theNumber % 2 == 0:
