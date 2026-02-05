@@ -13,6 +13,10 @@ def minMax():
     allNumber = []
     
     firstNum = input('Input Your number (fill blank to close): ')
+    if firstNum == str(firstNum):
+        print('Error, You can just input number!')
+        return
+    
     if firstNum != '':
         firstNum = int(firstNum)
         allNumber.append(firstNum)
@@ -24,6 +28,9 @@ def minMax():
     
     while True:
         n = input('Input Your number (fill blank to close): ')
+        if n == str(n):
+            print('Error, You can just input number!')
+            break
         if n != '':
             n = int(n)
             allNumber.append(n)
