@@ -11,7 +11,16 @@ def summation():
     
 def minMax():
     allNumber = []
-    button = True
+    
+    firstNum = input('Input Your number (fill blank to close): ')
+    if firstNum != '':
+        firstNum = int(firstNum)
+        allNumber.append(firstNum)
+        minNum = firstNum
+        maxNum = firstNum
+    else:
+        print('Error, You can just input number!')
+        return
     
     while True:
         n = input('Input Your number (fill blank to close): ')
@@ -20,10 +29,6 @@ def minMax():
             allNumber.append(n)
         else:
             break
-        while button == True:
-            maxNum = allNumber[0]
-            minNum = allNumber[0]
-            button = False
         
         if n > maxNum:
             maxNum = n
@@ -33,6 +38,9 @@ def minMax():
     print('All Your inputted number is: ', end='')
     for i in range(0, len(allNumber)):
         print(allNumber[i], end=" ")
+    
+    print(f'The minimum number from your input is {minNum}')
+    print(f'\nThe maximum number from your input is {maxNum}')
     
 def checkOdd():
     allNumber = []
