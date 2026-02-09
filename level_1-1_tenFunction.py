@@ -71,7 +71,11 @@ def checkOdd():
     for i in range(0, len(oddNumber)):
         print(oddNumber[i], end=" ")
 
-# def checkMax():
+def checkMax():
+    allNumber = []
+
+    firstNum = input('Input Your number (fill blank to close): ')
+    
     
     
 # def averageNumber():
