@@ -3,7 +3,7 @@ def inputAngka():
         try:
             number = int(input('Input Your Number : '))
             break
-        except:
+        except ValueError:
             print('Please just input number.')
     
     return number

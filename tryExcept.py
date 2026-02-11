@@ -6,7 +6,7 @@ while True:
     try:
         number = int(inputter())
         break
-    except:
+    except ValueError:
         print("Error, this isn't number!")
 
 print(f'Your number is: {number}')

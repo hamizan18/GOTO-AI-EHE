@@ -2,8 +2,10 @@ allNumber = []
 
 while True:
     try:
-        question = int(input('How much input do you want to make: '))
-        break
+        question = int(input('How much input do you want to make (Positive only): '))
+        if question > 0:
+            print('Do not input negative number!')
+            break
     except:
         print('Number only!')
 
@@ -16,9 +18,9 @@ while i < question:
             i+=1
         else:
             print("Do not input negative number!")
-    except:
+    except ValueError:
         print('Just Input Number!!')
 
 print('All Your number is: ', end="")
-for i in range(0, len(allNumber)):
-    print(allNumber[i], end=" ")
+for number in allNumber:
+    print(number, end=" ")
