@@ -1,4 +1,3 @@
-allNumber = []
 def inputter():
     firstNumber = input('Input Your number here: ')
     return firstNumber
