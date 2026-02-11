@@ -3,11 +3,11 @@ def inputter():
     firstNumber = input('Input Your number here: ')
     return firstNumber
 
-while number == None:
+while True:
     try:
         number = int(inputter())
+        break
     except:
         print("Error, this isn't number!")
-        inputter()
-    
+
 print(f'Your number is: {number}')
