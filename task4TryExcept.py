@@ -2,10 +2,11 @@ allNumber = []
 
 while True:
     try:
-        question = int(input('How much input do you want to make (Positive only): '))
+        question = int(input('Please input a positive number that greater than 0: '))
         if question > 0:
-            print('Do not input negative number!')
             break
+        else:
+            print('Do not input negative number!')
     except ValueError:
         print('Number only!')
 
