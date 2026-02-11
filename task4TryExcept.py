@@ -6,7 +6,7 @@ while True:
         if question > 0:
             print('Do not input negative number!')
             break
-    except:
+    except ValueError:
         print('Number only!')
 
 i = 0
