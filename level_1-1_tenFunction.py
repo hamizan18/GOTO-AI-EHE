@@ -11,43 +11,47 @@ def summation():
     
 def minMax():
     allNumber = []
-    
-    firstNum = input('Input Your number (fill blank to close): ')
-    if firstNum == str(firstNum):
-        print('Error, You can just input number!')
-        return
-    
-    if firstNum != '':
-        firstNum = int(firstNum)
-        allNumber.append(firstNum)
-        minNum = firstNum
-        maxNum = firstNum
-    else:
-        print('Error, You can just input number!')
-        return
+    button = False
     
     while True:
-        n = input('Input Your number (fill blank to close): ')
-        if n == str(n):
+        try:
+            firstNum = input('Input Your number (fill blank to close): ')
+            if firstNum == '':
+                print('Program closed.')
+                break
+            else:
+                firstNum = int(firstNum)
+                allNumber.append(firstNum)
+                minNum = firstNum
+                maxNum = firstNum
+                button = True
+            break
+        except ValueError:
             print('Error, You can just input number!')
-            break
-        if n != '':
-            n = int(n)
-            allNumber.append(n)
-        else:
-            break
+            
+    if button == True:
+        while True:
+            try:
+                n = input('Input Your number (fill blank to close): ')
+                if n == '':
+                    break
+                else:
+                    n = int(n)
+                    allNumber.append(n)
+            except ValueError:
+                print('Error, You can just input number!')
+
+            if n > maxNum:
+                maxNum = n
+            if n < minNum:
+                minNum = n
         
-        if n > maxNum:
-            maxNum = n
-        if n < minNum:
-            minNum = n
-    
-    print('All Your inputted number is: ', end='')
-    for i in range(0, len(allNumber)):
-        print(allNumber[i], end=" ")
-    
-    print(f'The minimum number from your input is {minNum}')
-    print(f'\nThe maximum number from your input is {maxNum}')
+        print('\nAll Your inputted number is: ', end='.')
+        for number in allNumber:
+            print(number, end=" ")
+        
+        print(f'\nThe minimum number from your input is {minNum}.')
+        print(f'The maximum number from your input is {maxNum}.')
     
 def checkOdd():
     allNumber = []
