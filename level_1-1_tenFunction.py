@@ -77,9 +77,41 @@ def checkOdd():
 
 def checkMax():
     allNumber = []
+    button = False
 
-    firstNum = input('Input Your number (fill blank to close): ')
+    while True:
+        firstNum = input('Input Your number (fill blank to close): ')
+        try:
+            if firstNum == '':
+                print('Program Closed.')
+                break
+            else:
+                firstNum = int(firstNum)
+                maxNum = firstNum
+                button = True
+                break
+        except:
+            print('You can just input number..')
     
+    if button == True:
+        while True:
+            try:
+                nextNum = input('Input Your number (fill blank to close): ')
+                if nextNum == '':
+                    break
+                else:
+                    nextNum = int(nextNum)
+                    allNumber.append(nextNum)
+                    if maxNum < nextNum:
+                        maxNum = nextNum
+            except ValueError:
+                print('Please input number..')
+        
+        print('\nAll your number: ', end=" ")
+        for number in allNumber:
+            print(number, end=" ")
+                
+        print(f'\nThe maximum number from your input is: {maxNum}')
     
     
 # def averageNumber():
