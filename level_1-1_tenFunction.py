@@ -114,8 +114,32 @@ def checkMax():
         print(f'\nThe maximum number from your input is: {maxNum}')
     
     
-# def averageNumber():
+def averageNumber():
+    allNumber = []
+    button = False
+    tempNumber = int(0)
     
+    while True:
+        try:
+            number = input('Input Your Number here (fill blank to close): ')
+            if number == '':
+                break
+            else:
+                number = int(number)
+                tempNumber = tempNumber + number
+                allNumber.append(number)
+                button = True
+        except:
+            print('You can just input number.')
+            
+    if button == True:
+        result = tempNumber / len(allNumber)
+        print(f'\nTotal: {tempNumber}')
+        print('All Your inputted number: ', end=" ")
+        for i in allNumber:
+            print(i, end=" ")
+        print(f'\nThe average from your inputted number is: {result}')
+        
     
 # def primeCheck():
     
