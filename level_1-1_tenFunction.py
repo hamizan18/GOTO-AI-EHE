@@ -141,7 +141,7 @@ def averageNumber():
         print(f'\nThe average from your inputted number is: {result}')
         
     
-# def primeCheck():
+def primeCheck():
     
     
 # def factorial():
