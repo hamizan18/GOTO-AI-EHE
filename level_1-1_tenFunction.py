@@ -1,3 +1,4 @@
+import math
 # FUNCTION
 def summation():
     res = 0
@@ -142,8 +143,52 @@ def averageNumber():
         
     
 def primeCheck():
-    
-    
+    allNumber = []
+    primeNumber = []
+    button = False
+
+    while True:
+        try:
+            n = input('Input Your number here (fill blank to close): ')
+            if n == '':
+                print('Program Closed.')
+                break
+            else:
+                n = int(n)
+                allNumber.append(n)
+                
+                if n <= 1:
+                    continue
+                
+                if n % 2 == 0:
+                    primeNumber.append(n)
+                    continue
+                
+                if n == 2:
+                    continue
+                    
+                is_prime = True
+                for i in range(3, int(math.sqrt(n)) + 1, 2):
+                    if n % i == 0:
+                        is_prime = False
+                        break
+
+                if is_prime:
+                    primeNumber.append(n)
+                    
+                button = True
+        except:
+            print('You can just input number.')
+
+    if button == True:
+        print(f'All your number is: ', end=" ")
+        for number in allNumber:
+            print(number, end=" ")
+            
+        print(f'\nAll your prime number is: ', end=" ")
+        for prime in primeNumber:
+            print(prime, end=" ")
+        
 # def factorial():
 
 
