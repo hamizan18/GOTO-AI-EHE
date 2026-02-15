@@ -149,7 +149,7 @@ def primeCheck():
 
     while True:
         try:
-            n = input('Input Your number here (fill blank to close): ')
+            n = input('Input Your number here (fill blank to closeee): ')
             if n == '':
                 print('Program Closed.')
                 break
