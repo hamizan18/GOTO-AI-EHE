@@ -189,8 +189,28 @@ def primeCheck():
         for prime in primeNumber:
             print(prime, end=" ")
         
-# def factorial():
-
+def factorial():
+    allNumber = []
+    temp = 1
+    button = False
+    
+    while True:
+        try:
+            number = input('Input Your number here: ')
+            number = int(number)
+            for i in range(number, 1, -1):
+                temp *= i
+            result = temp
+            button = True
+            break
+        except ValueError:
+            print('You can just input number.')
+            
+    if button == True:
+        print('Your number: ', end="")
+        for number in range(number, 1, -1):
+            print(number, end=" ")
+        print('\nThe result from your inputted number is: ', result)
 
 # def subtraction():
 
