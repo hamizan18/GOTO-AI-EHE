@@ -190,7 +190,6 @@ def primeCheck():
             print(prime, end=" ")
         
 def factorial():
-    allNumber = []
     temp = 1
     button = False
     
@@ -208,19 +207,11 @@ def factorial():
             
     if button == True:
         print('Your number: ', end="")
-        for number in range(number, 1, -1):
+        for number in range(number, 0, -1):
             print(number, end=" ")
         print('\nThe result from your inputted number is: ', result)
 
-# def subtraction():
-
-
-# def divine():
-
-
-# def multiply():
-    
-action = int(input('1. Summation\n2. Check Min n Max number\n3. Check the Odd number\n4. Check the Max number\n5. Check Average spawn number\n6. Check prime nunmber\n7. Factorial count\n8. Number Subtraction\n9. Divine Number\n10. Multiply Number\nChoose your action: '))
+action = int(input('1. Summation\n2. Check Min n Max number\n3. Check the Odd number\n4. Check the Max number\n5. Check Average spawn number\n6. Check prime nunmber\n7. Factorial count\nChoose your action: '))
 match action:
     case 1:
         summation()
@@ -236,9 +227,3 @@ match action:
         primeCheck()
     case 7:
         factorial()
-    case 8:
-        subtraction()
-    case 9:
-        divine()
-    case 10:
-        multiply()
