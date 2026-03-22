@@ -20,3 +20,14 @@ class Stack:
     
     def show(self):
         return self.data
+    
+    
+s = Stack()
+
+s.push(10)
+s.push(20)
+s.push(30)
+
+print(s.show())
+print(s.pop())
+print(s.peek())
