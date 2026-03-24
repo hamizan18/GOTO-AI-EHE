@@ -1,1 +1,3 @@
-print("aloo, Namaku Tijaa")
+nama = "Mijaenn"
+
+print("aloo, Namaku", nama)
